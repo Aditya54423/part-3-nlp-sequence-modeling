@@ -1,0 +1,70 @@
+SAMPLE PREDICTIONS - BiLSTM Sentiment Model
+======================================================================
+ Architecture: Embedding(64) -> BiLSTM(128x2) -> Dense(64) -> Softmax(3)
+ Classes : ['negative', 'neutral', 'positive']
+
+----------------------------------------------------------------------
+[CORRECT]
+ True : positive
+ Pred : positive
+ Text : "support team resolved issue quickly thank"
+
+[CORRECT]
+ True : positive
+ Pred : positive
+ Text : "dashboard working well happy service"
+
+[CORRECT]
+ True : negative
+ Pred : negative
+ Text : "router keep failing support not resolved issue"
+
+[CORRECT]
+ True : negative
+ Pred : negative
+ Text : "dashboard keep failing support not resolved issue ticket number"
+
+[CORRECT]
+ True : negative
+ Pred : negative
+ Text : "refund still pending experience frustrating ticket number please respond soon possibl"
+
+[CORRECT]
+ True : neutral
+ Pred : neutral
+ Text : "someone explain difference plan ticket number"
+
+[CORRECT]
+ True : positive
+ Pred : positive
+ Text : "great service clear communication support team"
+
+[CORRECT]
+ True : neutral
+ Pred : neutral
+ Text : "need help finding invoice last order please respond soon possible"
+
+[CORRECT]
+ True : negative
+ Pred : negative
+ Text : "unhappy service plan not worked since morning ticket number"
+
+[CORRECT]
+ True : positive
+ Pred : positive
+ Text : "like new profile update easy use"
+
+[CORRECT]
+ True : positive
+ Pred : positive
+ Text : "satisfied plan would recommend others ticket number"
+
+[CORRECT]
+ True : neutral
+ Pred : neutral
+ Text : "share status account request"
+
+----------------------------------------------------------------------
+Correct: 12/12 (100.0%)
+
+Full metrics saved in results/model_evaluation.png
